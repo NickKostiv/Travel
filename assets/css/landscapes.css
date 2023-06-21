@@ -1540,3 +1540,14 @@ left: 30px;
     padding-top: 20px;
   }
 }
+
+@media screen and (max-width: 716px) {
+  .map-items-wrapp{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  }
+  .map-item{
+    grid-column: span 1;
+ } 
+}

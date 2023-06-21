@@ -1568,11 +1568,16 @@ font-size: 40px;
 
  
 
-  .hover-search {
+  /* .hover-search {
     position: initial !important;
     height: auto;
     opacity: 1;
     margin: 0;
+  } */
+
+  .hover-search{
+    height: 50%;
+    margin-top: 130px;
   }
 
   .location-content span {
