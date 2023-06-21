@@ -153,3 +153,36 @@ let frSwiper = new Swiper(".slider-4", {
 });
 
 /*==================== Testimonials End  ====================*/
+
+// Close Button Hover Search
+const handleCardsHover = () => {
+  const toursCards = document.querySelectorAll('.tours-card')
+
+  toursCards.forEach(card => {
+    const hoverEl = card.querySelector('.hover-search')
+    const defaultEl = card.querySelector('.search-default')
+    const closeBtn = card.querySelector('.close-button')
+  
+    card.addEventListener('mouseenter', () => {
+      defaultEl.style.opacity = 0
+      defaultEl.style.zIndex = 0
+      hoverEl.style.opacity = 1
+      hoverEl.style.zIndex = 10
+    })
+  
+    card.addEventListener('mouseleave', () => {
+      defaultEl.style.opacity = 1
+      defaultEl.style.zIndex = 10
+      hoverEl.style.opacity = 0
+      hoverEl.style.zIndex = 0
+    })
+  
+    closeBtn.addEventListener('click', () => {
+      defaultEl.style.opacity = 1
+      defaultEl.style.zIndex = 10
+      hoverEl.style.opacity = 0
+      hoverEl.style.zIndex = 0
+    })
+  })
+}
+handleCardsHover()
