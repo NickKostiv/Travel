@@ -1326,7 +1326,7 @@ font-size: 40px;
     padding-top: 0;
   }
 
-  .testimonials {
+  /* .testimonials {
     padding-top: 100px !important;
     padding-left: 5%;
   }
@@ -1357,7 +1357,7 @@ font-size: 40px;
 
   .testimonials-info p {
     width: 100%;
-  }
+  } */
 
 
 
@@ -1577,7 +1577,7 @@ font-size: 40px;
 
   .hover-search{
     height: 50%;
-    margin-top: 130px;
+    margin-top: 10px;
   }
 
   .location-content span {
