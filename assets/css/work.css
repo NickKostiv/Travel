@@ -17,21 +17,22 @@
 }
 
 .landing-content {
-  /* padding-bottom: 15%; */
+  padding-bottom: 0;
   padding-top: 15%;
   padding-left: 12%;
   min-height: 750px;
+  /* min-height: 400px; */
 }
+
 
 .main__landing-content-text{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  padding-right: 10em;
-  padding-top: 5em;
-  padding-bottom: 0;
+  width: 100%;
 }
+
 @media (max-width: 1200px){
   .main__landing-content-text{
     padding-right: 0;
@@ -39,8 +40,9 @@
 }
 @media (max-width: 500px){
   .main__landing-content-text{
-    padding-left: 50px;
-    margin-top: 35px;
+    /* padding-left: 50px; */
+    /* margin-top: 35px; */
+    padding-top: 50px;
   }
 }
 .landing-content h2 {
@@ -57,15 +59,14 @@
 
 .landing-content p {
   font-family: 'Montserrat', sans-serif;
-  width: 60%;
   letter-spacing: 0.02em;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 22px;
+  line-height: 130%;
   color: #D8D8D8;
   display: flex;
   justify-content: center;
-  text-align: center;
+  margin-top: 35px;
 }
 
 .main__landing-content-scroll{
@@ -225,18 +226,30 @@
     padding-top: 50px;
   }
 }
+@media (max-width: 992px) {
+  .daily{
+    padding-bottom: 30px;
+  }
+}
 
-.daily-fs,
+.daily-fs{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 8%;
+  align-items: center;
+  gap: 50px;
+  margin-top: 15px;
+}
 .daily-sc {
   display: flex;
   justify-content: space-between;
   padding-inline: 8%;
   align-items: center;
   gap: 50px;
+  margin-top: 120px;
 }
-.daily-fs-images,
-.daily-sc-images {
-  max-width: 500px;
+@media (max-width: 992px) {
+  
 }
 
 .daily-fs-content {
@@ -244,6 +257,7 @@
   position: relative;
   z-index: 3;
   flex-wrap: wrap;
+  margin-top: 35px;
 }
 
 .daily-sc-content {
@@ -264,8 +278,10 @@
   padding-bottom: 20px;
   color: #242424;
   position: absolute;
-  right: 0;
+  /* right: 150px; */
+  left: 240px;
   bottom: 250px;
+  position: static;
 }
 .daily-sc-content h2 {
   letter-spacing: 0.02em;
@@ -275,6 +291,7 @@
   position: absolute;
   right: 0;
   bottom: 330px;
+  position: static;
 }
 @media (max-width: 600px) {
   .daily-fs-content p {
@@ -292,7 +309,7 @@
 }
 .number {
   position: absolute;
-  top: -300px;
+  top: -250px;
   left: 0px;
   /* width: 200px;
   height: 200px; */
@@ -308,7 +325,7 @@
 @media (max-width: 1300px) {
   .number{
     font-size: 150px;
-    top: -240px;
+    top: -180px;
   }
   .daily-fs-content h2{
     right: 0;
@@ -323,20 +340,23 @@
 @media (max-width: 992px) {
   .number{
     font-size: 75px;
-    top: -150px;
+    top: -100px;
   }
   .daily-fs-content h2{
-    right: 0;
+    right: 50%;
     bottom: 200px;
   }
   .daily-sc-content h2 {
-    right: 0;
+    right: 50%;
     bottom: 250px;
   }
 
   .daily {
     padding-top: 0px;
     padding-bottom: 50px;
+  }
+  .daily-fs{
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 661px) {
@@ -382,12 +402,11 @@
 .daily-fs-images {
   display: flex;
   gap: 10px;
-  width: 500px;
 
 }
 
 .daily-fs-images img {
-    width: 500px;
+    width: 430px;
     height: auto;
     display: flex;
 }
@@ -396,16 +415,15 @@
     width: 100%;
     margin-bottom: 120px;
   }
-  @media (max-width: 992px) {
-    .daily-fs-images{
-      justify-content: center;
-      align-self: center;
-    }
-    .daily-sc-images img{
-
-    }
+  .daily-fs-images img:last-child{
+    margin-bottom: 0;
   }
 }
+@media (max-width: 992px) {
+  .daily-fs-images{
+    justify-content: center;
+    align-self: center;
+  }
 
 
 .daily-sc {
@@ -432,6 +450,7 @@
    height: auto;
    width: 100%;
 }
+}
 
 
 /* ===================== Daily End ============================= */
@@ -439,11 +458,7 @@
 /* ================== your-trip Section Start ======================== */
 
 .your-trip-content {
-  padding: 10em 12em 4em 4em;
-  padding-top: 10em;
-  padding-bottom: 12em;
-  padding-right: 4em;
-  padding-left: 4em;
+  padding: 7em 12em 12em 4em;
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
@@ -469,19 +484,6 @@
   color: #E58620;
 }
 
-/* .your-trip-text{
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.02em;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 120%;
-  color: #D8D8D8;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  max-width: 500px;
-} */
 .your-trip-text{
   font-family: 'Montserrat', sans-serif;
     color: #C7C7C7;
@@ -526,15 +528,23 @@
     justify-content: center;
     align-items: center; 
   }
-  .your-trip-text{
-
-  }
 }
 @media (max-width: 768px) {
   .your-trip-content{
     padding: 1em 4em 2em 3em;
   }
-
+  .your-trip-text{
+    font-size: 13px;
+    line-height: 110%;
+  }
+}
+.st-btn{
+  margin-top: 60px;
+}
+@media (max-width: 992px) {
+  .st-btn{
+    margin-top: 0px;
+  }
 }
 
 
@@ -1187,7 +1197,6 @@ left: 30px;
   
   .landing-content p {
     font-size: 16px;
-    width: 100%;
   }
 
   .explore-slide {
@@ -1273,12 +1282,16 @@ left: 30px;
  
 
 
-  .daily-fs, .daily-sc {
+  .daily-fs{
+    flex-direction: column-reverse;
+    align-items: initial;
+    padding-inline: 5%;
+  }
+  .daily-sc{
     flex-direction: column;
     align-items: initial;
     padding-inline: 5%;
   }
-
   
 
   .daily-fs-content {
@@ -1531,7 +1544,7 @@ left: 30px;
   }
 
   .daily {
-    padding-bottom: 230px;
+    padding-bottom: 0;
   }
   .experience-title {
     margin-bottom: -40px;
@@ -1556,6 +1569,7 @@ left: 30px;
 
   .landing-content p {
     font-size: 14px;
+    text-align: center;
   }
 
 
