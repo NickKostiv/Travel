@@ -219,7 +219,11 @@
   gap: 200px;
   color: #fff;
 }
-
+.about-text{
+  font-family: 'Montserrat', sans-serif;
+    color: #C7C7C7;
+    line-height: 150%;
+}
 .about-us h2 {
   white-space: nowrap;
 }
