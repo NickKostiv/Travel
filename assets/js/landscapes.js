@@ -220,3 +220,33 @@ function checkScroll() {
 
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
+
+// Ініціалізуємо ScrollReveal
+ScrollReveal().reveal('.landing-content', { delay: 400, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.title-section', { delay: 700, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.daily-fs-content', { delay: 700, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.home-timeline-wrapp', { delay: 900, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.mobile-map', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.map-img', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.map-item1', { delay: 300, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.map-item2', { delay: 500, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.map-item3', { delay: 700, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.map-item4', { delay: 900, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.map-item5', { delay: 1200, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.map-item6', { delay: 1400, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.date-wrapp', { delay: 800, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.map-desc', { delay: 1000, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.explore-content', { delay: 800, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.explore-slider-wrapp', { delay: 1200, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.experience-title', { delay: 800, distance: '50px', origin: 'top', duration: 1000 });
+ScrollReveal().reveal('.daily-fs-images', { delay: 800, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.daily-sc-images', { delay: 800, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.daily-fs-content', { delay: 800, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.daily-sc-content', { delay: 800, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.experience-slider', { delay: 1000, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.ds-carousel ', { delay: 1000, distance: '50px', origin: 'left', duration: 1000 });
+
+
+
+
+// Інші налаштування ScrollReveal можна додати тут

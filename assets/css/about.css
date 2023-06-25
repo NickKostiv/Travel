@@ -1,3 +1,11 @@
+.progress-line {
+  height: 4px;
+  background-color: #0e0d0b;
+  width: 0;
+  transition: width 1s ease;
+}
+
+
 /* ================== Landing Start ======================== */
 
 .about-us {

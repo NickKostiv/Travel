@@ -44,10 +44,15 @@ ScrollReveal().reveal('.number', { delay: 400, distance: '50px', origin: 'right'
 ScrollReveal().reveal('.daily-fs', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
 ScrollReveal().reveal('.experience-title', { delay: 100, distance: '50px', origin: 'top', duration: 1000 });
 ScrollReveal().reveal('.daily-sc', { delay: 500, distance: '50px', origin: 'right', duration: 1000 });
-ScrollReveal().reveal('.daily-fs-images', { delay: 300, distance: '50px', origin: 'left', duration: 1000 });
-ScrollReveal().reveal('.daily-sc-images', { delay: 200, distance: '50px', origin: 'right', duration: 1000 });
-ScrollReveal().reveal('.daily-fs-content', { delay: 700, distance: '50px', origin: 'left', duration: 1000 });
-ScrollReveal().reveal('.daily-sc-content', { delay: 400, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.daily-fs-images', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.daily-sc-images', { delay: 500, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.daily-fs-content', { delay: 800, distance: '50px', origin: 'left', duration: 1000 });
+ScrollReveal().reveal('.daily-sc-content', { delay: 800, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.partner-title', { delay: 300, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.partner-item-1', { delay: 500, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.partner-item-2', { delay: 700, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.partner-item-3', { delay: 900, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.partner-item-4', { delay: 1000, distance: '50px', origin: 'right', duration: 1000 });
 
 // Інші налаштування ScrollReveal можна додати тут
 
