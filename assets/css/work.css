@@ -278,7 +278,6 @@ color: #242424;
 }
 
 .daily-fs-content {
-  width: 60%;
   position: relative;
   z-index: 3;
   flex-wrap: wrap;
