@@ -317,7 +317,6 @@
   padding-right: 7em;
 }
 .journey__subtext {
-  /* background-color: #242424; */
   background: #000;
   padding: 50px;
   border-radius: 35px;
@@ -1624,7 +1623,7 @@ left: 30px;
   }
 
   .journey {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
 
   .ds-carousel-wrapp {
