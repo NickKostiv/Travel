@@ -49,6 +49,7 @@ ScrollReveal().reveal('.daily-sc-images', { delay: 500, distance: '50px', origin
 ScrollReveal().reveal('.daily-fs-content', { delay: 800, distance: '50px', origin: 'left', duration: 1000 });
 ScrollReveal().reveal('.daily-sc-content', { delay: 800, distance: '50px', origin: 'right', duration: 1000 });
 ScrollReveal().reveal('.partner-title', { delay: 300, distance: '50px', origin: 'right', duration: 1000 });
+ScrollReveal().reveal('.text-center', { delay: 400, distance: '50px', origin: 'top', duration: 1000 });
 ScrollReveal().reveal('.partner-item-1', { delay: 500, distance: '50px', origin: 'right', duration: 1000 });
 ScrollReveal().reveal('.partner-item-2', { delay: 700, distance: '50px', origin: 'right', duration: 1000 });
 ScrollReveal().reveal('.partner-item-3', { delay: 900, distance: '50px', origin: 'right', duration: 1000 });

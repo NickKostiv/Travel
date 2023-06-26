@@ -549,6 +549,41 @@ color: #242424;
     width: 100%;
     max-width: 600px;
 }
+.text-center{
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #C7C7C7;
+  line-height: 150%;
+}
+@media (max-width: 992px) {
+  .text-center{
+    font-size: 22px;
+    padding-top: 10px;
+  }
+
+}
+@media (max-width: 768px) {
+  .text-center{
+    font-size: 12px;
+  }
+}
+.text-curate{
+  font-size: 36px;
+  padding: 50px;
+}
+@media (max-width: 992px) {
+  .text-curate{
+    font-size: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .text-curate{
+    font-size: 16px;
+  }
+}
 .your-trip h2 {
   white-space: nowrap;
 }
@@ -586,7 +621,7 @@ color: #242424;
 }
 @media (max-width: 768px) {
   .your-trip-content{
-    padding: 3em 3em 8em 3em;
+    padding: 3em;
   }
   .your-trip-text{
     font-size: 13px;
