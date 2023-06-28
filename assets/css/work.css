@@ -20,6 +20,7 @@
 }
 
 .landing-content {
+  /* padding: 15% 0 0 12%; */
   padding-bottom: 0;
   padding-top: 15%;
   padding-left: 12%;
@@ -50,13 +51,6 @@
     padding-right: 0;
   }
 }
-@media (max-width: 500px){
-  .main__landing-content-text{
-    /* padding-left: 50px; */
-    /* margin-top: 35px; */
-    /* padding-top: 50px; */
-  }
-}
 .landing-content h2 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -71,13 +65,13 @@
 
 .landing-content p {
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  max-width: 830px;
   letter-spacing: 0.02em;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 130%;
+  font-size: 18px;
+  line-height: 150%;
   color: #D8D8D8;
-  display: flex;
-  justify-content: center;
   margin-top: 35px;
 }
 
