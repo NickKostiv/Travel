@@ -33,6 +33,8 @@ helpBtn.addEventListener("click", function () {
   helpCenterForm.classList.toggle("show-top");
 });
 
+
+
 // ====================== Help Center End =======================
 
 // Ініціалізуємо ScrollReveal
