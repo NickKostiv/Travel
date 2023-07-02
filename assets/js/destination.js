@@ -118,8 +118,18 @@ let thSwiper = new Swiper(".slider-3", {
   navigation: {
     nextEl: ".mb-next",
     prevEl: ".mb-prev",
-  }
+  },
+  breakpoints: {
+    // Додайте breakpoint, при якому буде з'являтися новий елемент при свайпі
+    768: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });
+
 
 /*==================== DestinationSlider End ====================*/
 
@@ -205,7 +215,7 @@ ScrollReveal().reveal('.daily-sc-images', { delay: 800, distance: '50px', origin
 ScrollReveal().reveal('.daily-fs-content', { delay: 800, distance: '50px', origin: 'right', duration: 1000 });
 ScrollReveal().reveal('.daily-sc-content', { delay: 800, distance: '50px', origin: 'right', duration: 1000 });
 ScrollReveal().reveal('.experience-slider', { delay: 1000, distance: '50px', origin: 'left', duration: 1000 });
-ScrollReveal().reveal('.ds-carousel', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
+// ScrollReveal().reveal('.ds-carousel', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
 ScrollReveal().reveal('.tours-card1', { delay: 700, distance: '50px', origin: 'top', duration: 1000 });
 ScrollReveal().reveal('.tours-card2', { delay: 900, distance: '50px', origin: 'top', duration: 1000 });
 ScrollReveal().reveal('.tours-card3', { delay: 1100, distance: '50px', origin: 'top', duration: 1000 });
