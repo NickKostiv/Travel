@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  custom-navbar fixed-top">
       <div class="container-fluid justify-content-between">
         <a class="navbar-brand" href="#">
-          <img loading="lazy" src="./assets/images/logo.svg" alt="logo">
+          <img src="./assets/images/logo.svg" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,10 +48,10 @@
           <div class="d-flex justify-content-center d-lg-flex">
             <div class="d-none d-lg-flex align-items-center">
               <a href="#">
-               <img loading="lazy" width="20px" src="./assets/images/facebook.svg" alt="facebook">
+               <img width="20px" src="./assets/images/facebook.svg" alt="facebook">
               </a>
               <a href="#">
-                <img loading="lazy" width="20px" class="mx-4" src="./assets/images/instagram.svg" alt="instagram">
+                <img width="20px" class="mx-4" src="./assets/images/instagram.svg" alt="instagram">
               </a>
             </div>
             <a class="contact-us-btn" href="./contact.html">CONTACT US</a>
@@ -68,47 +68,67 @@
     <div class="main-landing">
       <div class="landing">
         <div class="landing-content">
-          <video loading="lazy"   class="landing-video video-1 active-video" width="100%" height="100%" id="background-video" autoplay loop muted>
+          <video class="landing-video video-1 active-video" width="100%" height="100%" id="background-video" autoplay loop muted>
             <source id="video-sr" src="./assets/videos/desire_trip_video.mp4" type="video/mp4">
           </video>
          
           <div class="landing-tx">
             <h2>Desire Trip</h2>
-            <p>We Provide Our Expertise to Cater to All your travel needs</p>
+            <p>Weaving Magical Travel Stories, One Journey at a Time</p>
              
           </div>
           <div class="d-flex video-control"> 
-            <img loading="lazy" id="play-btn" src="./assets/images/pause-btn.svg" alt="play">
-             <img loading="lazy" id="muted" src="./assets/images/muted.svg" alt="muted">
+            <img id="play-btn" src="./assets/images/pause-btn.svg" alt="play">
+             <img id="muted" src="./assets/images/Sunrise 2.png" alt="muted">
           </div>
         </div>
         <div class="help-center-form">
           <button id="help-btn" class="help-center">can i <span>help?</span></button>
           <div id="help-center" class="hidden">
+  
             <div class="contact-form">
               <div class="contact-form-content">
-                <div class="close" id="close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 6L18.7279 18.7279" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M6 18.728L18.7279 6.00011" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
-                  </svg>
-                </div>
                 <h2>travel carefree again </h2>
                 <p>Book your private, custom tour of a <br> lifetime with 100% confidence</p>
+                <div>
+                  <span>Step 1</span>
+                  <span>Step 2</span>
+                </div>
               </div>
-                <input type="text" placeholder="Name" class="form-control" id="name">
-                <input type="email" placeholder="Email/Whatsapp No:" class="form-control" id="email">
-                <input type="text" placeholder="Where do you want to go" class="form-control" id="place">
-                <textarea placeholder="Message" class="form-control" id="message" rows="5"></textarea>
-              <button class="contact-us-btn" type="submit">Send us</button>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Where do you want to go?
+                </option>
+  
+              </select>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Your Interests?
+  
+                </option>
+  
+              </select>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>When?</option>
+  
+              </select>
+              <div class="d-flex" style="gap: 10px;">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>No of travelers
+  
+                  </option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Budget</option>
+                </select>
+              </div>
+              <button class="contact-us-btn" type="submit">get started</button>
             </div>
           </div>
         </div>
-        
       </div>
       <div class="first-slider">
         <div class="slider-1-arrows" style="z-index: 999;">
-          <img loading="lazy" width="40px" class="button-prev" src="./assets/images/arrow-left.svg" alt="">
-          <img loading="lazy" width="40px" class="button-next mx-3" src="./assets/images/arrow-right.svg" alt="">
+          <img width="40px" class="button-prev" src="./assets/images/arrow-left.svg" alt="">
+          <img width="40px" class="button-next mx-3" src="./assets/images/arrow-right.svg" alt="">
   
         </div>
         <div class="swiper swiper-container slider-1">
@@ -117,17 +137,17 @@
           <div class="swiper-wrapper ">
             <!--==================== Element 1 ====================-->
             <div class=" swiper-slide fs-slide">
-              <img loading="lazy" src="assets/images/first-slider-1.png" alt="">
+              <img src="assets/images/first-slider-1.png" alt="">
             </div>
   
             <!--==================== Element 2 ====================-->
             <div class=" swiper-slide fs-slide">
-              <img loading="lazy" src="assets/images/first-slider-2.png" alt="">
+              <img src="assets/images/first-slider-2.png" alt="">
             </div>
   
             <!--==================== Element 3 ====================-->
             <div class=" swiper-slide fs-slide">
-              <img loading="lazy" src="assets/images/first-slider-3.png" alt="">
+              <img src="assets/images/first-slider-3.png" alt="">
             </div>
           </div>
   
@@ -141,14 +161,10 @@
         <div>
           <div class="about-text">
             <p>
-              Desire Trip is a travel company with a clear focus of providing the best travel experience time and again.
-              We are the fastest growing and professionally managed company.
+              Welcome to the ultimate gateway to unforgettable journeys, where your travel dreams come alive! Desire Trip is your passport to a world of exploration and discovery. Join us as we dive into capturing the world's beauty, culture, and charm, crafting bespoke experiences that will leave you with lifelong memories. Get ready to ignite your wanderlust, because at Desire Trip, we believe that every journey is a story waiting to be told.
   
             </p>
-            <p>We provide our expertise to cater to all your travel needs right from helping you choose the destination,
-              itinerary planning, accommodation, ticketing and other allied services. We believe in customizing the trip
-              as per the customer taste and convenience so that the way our customers imagine there vacation….It is
-              experienced!
+            <p>
             </p>
           </div>
           <div class="about-us-items">
@@ -181,20 +197,18 @@
     <!--------------------- Landing End ------------------------------>
   
   
+  
     <!--------------------- Journey Start --------------------------->
   
     <div id="experience" class="journey">
       <div class="journey-info  d-flex align-items-center">
         <div class="journey-img-groups">
-          <img loading="lazy" class="journey-fs-img" src="./assets/images/journey-1.png" alt="journey-1">
-          <img loading="lazy" class="journey-sc-img" src="./assets/images/journey-2.png" alt="journey-2">
+          <img class="journey-fs-img" src="./assets/images/journey-1.png" alt="journey-1">
+          <img class="journey-sc-img" src="./assets/images/journey-2.png" alt="journey-2">
         </div>
         <div class="journey-content">
-          <h2>Know how we craft your <br> <span>unforgettable</span> journey</h2>
-          <p class="py-3">We provide our expertise to cater to all your travel needs right from helping you choose the
-            destination, itinerary planning, accommodation, ticketing and other allied services. We believe in customizing
-            the trip as per the customer taste and convenience so that the way our customers imagine there vacation….It is
-            experienced!
+          <h2>UNFORGETTABLE JOURNEYS: <br> <span>CRAFTED </span> JUST FOR YOU</h2>
+          <p class="py-3">Desire Trip crafts unforgettable travel experiences. We reveal the world's most stunning places, customized to your interests, with great attention to detail. Our skilled curators ensure flawless every aspect of your trip, from lodgings to logistics. Explore with our enthusiasm to make your vacation dreams come true. Let us create a fantastic trip full of treasured memories. Experience authentic wanderlust with Desire Trips.
           </p>
           <a class="contact-us-btn jn-btn" href="#">learn more</a>
         </div>
@@ -204,65 +218,131 @@
       <h2 class="ds-title jn-title">our <span>Destination</span></h2>
       <div class="position-relative">
         <!-- next / prev arrows -->
-        <img loading="lazy" width="40px" class="button-prev journey-arrow-left" src="./assets/images/arrow-left.svg" alt="">
-        <img loading="lazy" width="40px" class="button-next ms-4 journey-arrow-right" src="./assets/images/arrow-right.svg" alt="">
+        <img width="40px" class="button-prev journey-arrow-left" src="./assets/images/arrow-left.svg" alt="">
+        <img width="40px" class="button-next ms-4 journey-arrow-right" src="./assets/images/arrow-right.svg" alt="">
         <!-- !next / prev arrows -->
         <div class="journey-sc-slider swiper-container slider-2 pt-5 mt-5" style="margin-inline: 180px;">
   
           <!-- swiper slides -->
           <div class="swiper-wrapper">
             <div class="swiper-slide journey-slide">
-              <img loading="lazy" src="./assets/images/journey-slider-1.png" alt="journey-slider-1"
+              <img src="./assets/images/Australia-12 Apostles.png" alt="journey-slider-1"
                 style="width: 100%; height: 10% !important;">
-              <h2>Boracay</h2>
-              <p>The island is famous for traditional wooden sculpture and painting, as well as batik painting on fabric.
+              <h2>Australia</h2>
+              <p>Australia is known for its unique natural wonders, exotic wildlife, cultural richness, stunning beaches.
               </p>
               <div>
-                learn more <img loading="lazy" src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
               </div>
             </div>
   
             <div class="swiper-slide journey-slide">
-              <img loading="lazy" src="./assets/images/journey-slider-2.png" alt="journey-slider-2"
+              <img src="./assets/images/Bali_gate of heaven.png" alt="journey-slider-2"
                 style="width: 100%; height: 10% !important;">
               <h2>Bali</h2>
-              <p>The island is famous for traditional wooden sculpture and painting, as well as batik painting on fabric.
+              <p>Explore Bali and experience its remarkable harmony of natural beauty and spiritual calm.
               </p>
               <div>
-                learn more <img loading="lazy" src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
               </div>
             </div>
   
             <div class="swiper-slide journey-slide">
-              <img loading="lazy" src="./assets/images/journey-slider-3.png" alt="journey-slider-3"
+              <img src="./assets/images/Tokyo Japan.png" alt="journey-slider-3"
                 style="width: 100%; height: 10% !important;">
-              <h2>Samui</h2>
-              <p>The island is famous for traditional wooden sculpture and painting, as well as batik painting on fabric.
+              <h2>Japan</h2>
+              <p>Discover vibrant streets, contemporary buildings, and unique Japanese culture.
               </p>
               <div>
-                learn more <img loading="lazy" src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
               </div>
             </div>
   
             <div class="swiper-slide journey-slide">
-              <img loading="lazy" src="./assets/images/journey-slider-4.png" alt="journey-slider-4"
+              <img src="./assets/images/campfire, Sahara Morocco.png" alt="journey-slider-4"
                 style="width: 100%; height: 10% !important;">
-              <h2>Langkawi</h2>
-              <p>The island is famous for traditional wooden sculpture and painting, as well as batik painting on fabric.
+              <h2>Morocco</h2>
+              <p>Morocco's unique past and vibrant culture make it an enthralling travel destination
               </p>
               <div>
-                learn more <img loading="lazy" src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
               </div>
             </div>
   
             <div class="swiper-slide journey-slide">
-              <img loading="lazy" src="./assets/images/journey-slider-1.png" alt="journey-slider-1"
+              <img src="./assets/images/Queenstown, New Zealand.png" alt="journey-slider-5"
                 style="width: 100%; height: 10% !important;">
-              <h2>Boracay</h2>
-              <p>The island is famous for traditional wooden sculpture and painting, as well as batik painting on fabric.
+              <h2>New Zealand</h2>
+              <p>New Zealand is an undiscovered paradise, from its towering mountains to its dazzling coastline.
               </p>
               <div>
-                learn more <img loading="lazy" src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+              </div>
+            </div>
+
+            <div class="swiper-slide journey-slide">
+              <img src="./assets/images/Marina Bay Sands at Blue Hour.png" alt="journey-slider-6"
+                style="width: 100%; height: 10% !important;">
+              <h2>Singapore</h2>
+              <p>The country has vibrant cityscapes, beautiful parks, and thrilling theme parks.
+              </p>
+              <div>
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+              </div>
+            </div>
+
+            <div class="swiper-slide journey-slide">
+              <img src="./assets/images/Cape Town, South Africa.png" alt="journey-slider-3"
+                style="width: 100%; height: 10% !important;">
+              <h2>South Africa</h2>
+              <p>South Africa is a magical place full of rich history, unique fauna, and breathtaking landscapes.
+              </p>
+              <div>
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+              </div>
+            </div>
+  
+            <div class="swiper-slide journey-slide">
+              <img src="./assets/images/Holi festival, India.png" alt="journey-slider-4"
+                style="width: 100%; height: 10% !important;">
+              <h2>India</h2>
+              <p>India captivates travelers with its brilliant hues, old traditions and kind welcome.
+              </p>
+              <div>
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+              </div>
+            </div>
+  
+            <div class="swiper-slide journey-slide">
+              <img src="./assets/images/Burj Al Arab Jumeirah.png" alt="journey-slider-5"
+                style="width: 100%; height: 10% !important;">
+              <h2>UAE</h2>
+              <p>Discover Abu Dhabi and Dubai, two of the United Arab Emirates' most important and exciting cities.
+              </p>
+              <div>
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+              </div>
+            </div>
+
+            <div class="swiper-slide journey-slide">
+              <img src="./assets/images/Tràng An, Hoa Lư, Ninh Bình, Vietnam.png" alt="journey-slider-6"
+                style="width: 100%; height: 10% !important;">
+              <h2>Vietnam</h2>
+              <p>Discover Halong Bay, beautiful caverns, underground rivers, and exotic creatures await.
+              </p>
+              <div>
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+              </div>
+            </div>
+
+            <div class="swiper-slide journey-slide">
+              <img src="./assets/images/Jordon - Petra.png" alt="journey-slider-6"
+                style="width: 100%; height: 10% !important;">
+              <h2>Jordan</h2>
+              <p>It provides a fascinating combination of history, culture, and natural beauty 
+              </p>
+              <div>
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
               </div>
             </div>
           </div>
@@ -283,12 +363,12 @@
     <!--------------------- Destination Start ---------------------------->
     <div id="destination" class="destination">
       <div class="ds-carousel-wrapp">
-        <h2 class="ds-title">our <span>Destination</span></h2>
+        <h2 class="ds-title">our <span>Experience</span></h2>
         <div class="ds-carousel position-relative">
           <!-- next / prev arrows -->
           <div class="d-flex arrows-group">
-            <img loading="lazy" width="40px" class="button-prev journey-arrow-left ds-arrow-left mb-prev" src="./assets/images/arrow-left.svg" alt="">
-          <img loading="lazy" width="40px" class="button-next ms-4 journey-arrow-right ds-arrow-right mb-next" src="./assets/images/arrow-right.svg" alt="">
+            <img width="40px" class="button-prev journey-arrow-left ds-arrow-left mb-prev" src="./assets/images/arrow-left.svg" alt="">
+          <img width="40px" class="button-next ms-4 journey-arrow-right ds-arrow-right mb-next" src="./assets/images/arrow-right.svg" alt="">
           </div>
           <!-- !next / prev arrows -->
           <div class="swiper-container slider-3 pt-5 mt-5" style="margin-inline: 180px;">
@@ -296,27 +376,82 @@
             <!-- swiper slides -->
             <div class="swiper-wrapper slider-3-wrapper">
               <div class="swiper-slide ds-slider">
-                <img loading="lazy" src="./assets/images/destination-slider-1.svg" alt="gallery-slider-1" class="destination-slider-img">
+                <img src="./assets/images/destination-slider-1.svg" alt="gallery-slider-1" class="destination-slider-img">
                 <div>
-                  <p class="destination-slider-tx">Bali is the westernmost of the Lesser Sunda Islands. A mountain range
-                    stretches from west to east of Bali
-                    - a zone of high volcanic activity. The island is famous for traditional wooden sculpture and
-                    painting, as
-                    well as batik painting on fabric. Balinese dances are theatrical performances, the general meaning of
-                    which is based on the eternal struggle between good and evil.</p>
+                  <p class="destination-slider-tx">Visiting Bali is a truly unforgettable experience that will leave you with lasting memories of the trip! This Indonesian island is known for its stunning natural beauty, rich cultural heritage, and vibrant atmosphere. Whether you're looking to relax on a tropical beach, explore ancient temples, taste the exquisite cuisines, or experience the island's famous nightlife, Bali has something for everyone. </p>
                 </div>
               </div>
               <div class="swiper-slide ds-slider">
-                <img loading="lazy" src="./assets/images/destination-slider-1.svg" alt="gallery-slider-1" class="destination-slider-img">
+                <img src="./assets/images/Sydney_Australia.png" alt="gallery-slider-1" class="destination-slider-img">
                 <div>
-                  <p class="destination-slider-tx">Bali is the westernmost of the Lesser Sunda Islands. A mountain range
-                    stretches from west to east of Bali
-                    - a zone of high volcanic activity. The island is famous for traditional wooden sculpture and
-                    painting, as
-                    well as batik painting on fabric. Balinese dances are theatrical performances, the general meaning of
-                    which is based on the eternal struggle between good and evil.</p>
+                  <p class="destination-slider-tx">A land of tropical beaches, cute koalas, endearing kangaroos, Aboriginal culture, and lush rainforests, Australia is a traveller's dream destination with experiences that you will cherish for eternity!
+                    From adventure sports like water jetpacking and skydiving across Gold Coast’s pristine beaches, to scuba diving in the Great Barrier Reef, there is an abundance of activities that will make your heart race and pump up the adrenaline.
+                  </p>
                 </div>
               </div>
+              
+              <div class="swiper-slide ds-slider">
+                <img src="./assets/images/Vienna city.png" alt="gallery-slider-1" class="destination-slider-img">
+                <div>
+                  <p class="destination-slider-tx">Step into the world of majestic mountains and warm traditions in the heart of the Alps – Tyrol, Austria.
+                    Whether it is hiking or rock climbing in the summers or skiing and tobogganing in the snowy mountains, there is something to do all the year round.
+                    For travellers looking to explore beyond Vienna and Salzburg, this is the place to enjoy an experience of a lifetime. 
+                    
+                     </p>
+                </div>
+              </div>
+              <div class="swiper-slide ds-slider">
+                <img src="./assets/images/Black Forest Drive.png" alt="gallery-slider-1" class="destination-slider-img">
+                <div>
+                  <p class="destination-slider-tx">Explore the outdoors and breathe in the fresh air at the Black Forest area of Germany which has something for every type of traveller! Known for its dark conifer forests, enchanting villages, hiking trails along the Triberg Waterfalls, thermal spas and the cuckoo clocks, this place is soaked in its rich tradition and culture and is bound to leave you with a lifetime of memories!</p>
+                </div>
+              </div>
+              <div class="swiper-slide ds-slider">
+                <img src="./assets/images/South Africa-Safari.png" alt="gallery-slider-1" class="destination-slider-img">
+                <div>
+                  <p class="destination-slider-tx">Regarded as South Africa’s most beautiful region, the Garden Route begins about four hours 
+                    outside of Cape Town and stretches across one of the most popular and diverse coastlines in 
+                    the country. A temperate landscape of family friendly beaches, lakes and lagoons, diverse 
+                    vegetation and wildlife, mountains and forests, and a simple, scenic, ocean hugging highway 
+                    that guarantees the ultimate adventure!</p>
+                </div>
+              </div>
+              <div class="swiper-slide ds-slider">
+                <img src="./assets/images/Jaipur_PinkCity.png" alt="gallery-slider-1" class="destination-slider-img">
+                <div>
+                  <p class="destination-slider-tx">If you are looking for a rich cultural and historical experience, all while being surrounded by natural beauty and grand palaces, then head to Rajasthan in India that offers an array of exciting activities and breath-taking sights! You will not only get to witness the architectural marvel of the numerous palaces, forts and temples with their intricate and colourful frescoes and carvings</p>
+                </div>
+              </div>
+              <div class="swiper-slide ds-slider">
+                <img src="./assets/images/Japan-culture.png" alt="gallery-slider-1" class="destination-slider-img">
+                <div>
+                  <p class="destination-slider-tx">A blend of traditional culture and modern technology, Japan is a land of ancient shrines and temples that coexist together with its bustling cities and world-renowned developments! Experience its stunning landscapes and its unique culture including the famous tea ceremonies and the art of flower arrangement, Ikebana</p>
+                </div>
+              </div>
+              <div class="swiper-slide ds-slider">
+                <img src="./assets/images/New Zealand _Cruise.png" alt="gallery-slider-1" class="destination-slider-img">
+                <div>
+                  <p class="destination-slider-tx">A trip to the Southern Hemisphere is incomplete without travelling to the country known for its Maori tradition and geothermal mud spas – New Zealand!
+                    Whether it is adventure travel with activities such as bungee jumping or skydiving, or scenic escapades through Gondola rides and travelling on the Tranzalpine – there is something for everyone!
+                    </p>
+                </div>
+              </div>
+              <div class="swiper-slide ds-slider">
+                <img src="./assets/images/Venice-Canal.png" alt="gallery-slider-1" class="destination-slider-img">
+                <div>
+                  <p class="destination-slider-tx">Indulge in a rich and diverse travel experience in Northern Italy, which is known for its rich history and culture, natural beauty and enthralling outdoor adventures! Explore the ‘City of Canals’ Venice, the fashion capital Milan with its world-renowned museums, historic cathedrals and the famous ‘Last Supper’ painting by Leonardo da Vinci, and Lake Como with its sparkling blue waters, lush green hills and picturesque towns.</p>
+                </div>
+              </div>
+              <div class="swiper-slide ds-slider">
+                <img src="./assets/images/Cappadocia-Turkey.png" alt="gallery-slider-1" class="destination-slider-img">
+                <div>
+                  <p class="destination-slider-tx">Take a trip to this culturally rich and historically significant country which was at the heart of the Ottoman and Byzantine Empires!
+                    Enjoy activities like a hot air balloon ride in Cappadocia or a curative dip in the medicinal thermal hot springs of Pamukkale. 
+                    Spend a memorable night in a cave hotel in Goreme for a one-of-a-kind experience. 
+                    </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -324,41 +459,44 @@
   
       <div class="gallery">
         <div class="gallery-collection-content">
-          <h2>Gallery of Completed <br> <span>Journeys</span></h2>
+          <h2>Unveiling the Stories  <br> <span>of Our Journeys</span></h2>
           <p>
-            We provide our expertise to cater to all your travel needs right from helping you choose the destination,
-            itinerary planning, accommodation, ticketing and other allied services. We believe in customizing the trip as
-            per the customer taste and convenience so that the way our customers imagine there vacation….It is
-            experienced!
+            "Embark on a Journey with Desire Trip! Discover our Stunning Gallery of Completed Adventures. We've guided travelers across the globe, from immersing in Asian culture, savoring exotic cuisine, and celebrating vibrant festivals to sailing through the picturesque landscapes of Alaska and Canada's breathtaking autumn. Witness the awe-inspiring Masai Mara migration, welcome the New Year in the dazzling lights of Sydney, take a scenic road trip through the beauty of New Zealand, and explore the wonders of Australia's Great Ocean Road and South Africa's enchanting Garden Route. Let these remarkable experiences kindle your inspiration for your next extraordinary vacation with us!"
+
+
+
+
+
+
   
           </p>
         </div>
         <div class="gallery-collection">
           <div class="gallery-card gallery-card-big">
-            <img loading="lazy" class="gallery-card-img" src="./assets/images/gallery-1.svg" alt="gallery-1">
+            <img class="gallery-card-img" src="./assets/images/gallery-1.svg" alt="gallery-1">
             <div class="gallery-data">
-              <h2>Samui</h2>
+              <h2>Japan</h2>
               <a href="#">
-                learn more <img loading="lazy" src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+                learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
               </a>
             </div>
           </div>
           <div class='gallery-group'>
             <div class="gallery-card card-1">
-              <img loading="lazy" class="gallery-card-img" src="./assets/images/gallery-2.svg" alt="gallery-2">
+              <img class="gallery-card-img" src="./assets/images/Kayaking- New Zealand.png" alt="gallery-2">
               <div class="gallery-data">
-                <h2>Bali</h2>
+                <h2>New Zealand</h2>
                 <a href="#">
-                  learn more <img loading="lazy" src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+                  learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
                 </a>
               </div>
             </div>
             <div class="gallery-card card-2">
-              <img loading="lazy" class="gallery-card-img" src="./assets/images/gallery-3.svg" alt="gallery-3">
+              <img class="gallery-card-img" src="./assets/images/south africa culture.png" alt="gallery-3">
               <div class="gallery-data">
-                <h2>Langkawi</h2>
+                <h2>South Africa</h2>
                 <a href="#">
-                  learn more <img loading="lazy" src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
+                  learn more <img src="./assets/images/left-arrow-liness.svg" alt="left-arrow-liness">
                 </a>
               </div>
             </div>
@@ -375,39 +513,35 @@
       <h2 class="testimonials-title"><span class="testimonials-tl-2">testimonials</span> from our clients</h2>
       <div class="ds-carousel position-relative">
         <!-- next / prev arrows -->
-        <img loading="lazy" width="40px" class="button-prev journey-arrow-left" src="./assets/images/arrow-left.svg" alt="">
-        <img loading="lazy" width="40px" class="button-next ms-4 journey-arrow-right" src="./assets/images/arrow-right.svg" alt="">
+        <img width="40px" class="button-prev journey-arrow-left" src="./assets/images/arrow-left.svg" alt="">
+        <img width="40px" class="button-next ms-4 journey-arrow-right" src="./assets/images/arrow-right.svg" alt="">
         <!-- !next / prev arrows -->
         <div class="swiper-container slider-4 pt-2 mt-5 testimonials-swiper" style="margin-inline: 180px;">
   
           <!-- swiper slides -->
           <div class="swiper-wrapper">
             <div class="swiper-slide ts-slide">
-              <img loading="lazy" src="./assets/images/testimonials-slider-1.png" alt="testimonials-slider-1">
+              <img src="./assets/images/New Zealand-client.png" alt="testimonials-slider-1">
               <p>
-                "I recently hired Dial Moving to move and store our furniture and they were great! I have moved four times
-                and they were by far the best company I have used. The sales person Lenny Goodman was right on his
-                estimate. (Our last movers were $800.00 ..."
+               "We have had some amazing trips with desire trip the recent one being the New Zealand trip which was simply awesome . The itenary was very detailed  well planned right from the stay till the activities . For all age groups they had planned something."
               </p>
             </div>
             <div class="swiper-slide ts-slide">
-              <img loading="lazy" src="./assets/images/testimonials-slider-2.png" alt="testimonials-slider-2">
+              <img src="./assets/images/Dubrovnik.png" alt="testimonials-slider-2">
               <p>
-                "Very professional agency, especially liked the advice on border crossing and entry rules."
+                "We decided to let Desire Trip plan our honeymoon to Austria and Croatia. It was the best decision . The two of them do have the best services possible in order to make our trip a memorable one."
               </p>
             </div>
             <div class="swiper-slide ts-slide">
-              <img loading="lazy" src="./assets/images/testimonials-slider-3.png" alt="testimonials-slider-3">
+              <img src="./assets/images/Leopard-South Africa.png" alt="testimonials-slider-3">
               <p>
-                "I bought a holiday ticket from your agent Irina, I am very grateful for the selection of the tour. I am
-                satisfied with my vacation, the hotel service is excellent. Iryna helped and solved any issue. Hotel,
-                transfer young man, thank you very much."
+                "Our past three trips with Desire Trip have been the most memorable and enjoyable trips that we have had. The customisation of tours, attention to detail and the overall experience has been fabulous."
               </p>
             </div>
             <div class="swiper-slide ts-slide">
-              <img loading="lazy" src="./assets/images/testimonials-slider-4.png" alt="testimonials-slider-4">
+              <img src="./assets/images/Lama-Peru.png" alt="testimonials-slider-4">
               <p>
-                "Good afternoon, thank you very much for recommending this tour. It's just bombastic here"
+                " I heard about desire trip from a friend and it was the best decision to let them plan my honeymoon to Brazil and Peru...We loved the hospitality and the personal touch of Ashu and Ruchi.They would without fail keep a tap on our well being."
               </p>
             </div>
           </div>
@@ -428,13 +562,13 @@
       <div class="partners-group">
         <div class="d-flex align-items-center pr-images">
           <div class="vertical-line"></div>
-          <img loading="lazy" class="partner-item" src="./assets/images/partners-1.svg" alt="partners-1">
+          <img class="partner-item" src="./assets/images/partners-1.svg" alt="partners-1">
           <div class="vertical-line"></div>
-          <img loading="lazy" class="partner-item" src="./assets/images/partners-2.svg" alt="partners-2">
+          <img class="partner-item" src="./assets/images/partners-2.svg" alt="partners-2">
           <div class="vertical-line"></div>
-          <img loading="lazy" class="partner-item" src="./assets/images/partners-3.svg" alt="partners-3">
+          <img class="partner-item" src="./assets/images/partners-3.svg" alt="partners-3">
           <div class="vertical-line"></div>
-          <img loading="lazy" class="partner-item" src="./assets/images/partners-4.svg" alt="partners-4">
+          <img class="partner-item" src="./assets/images/partners-4.svg" alt="partners-4">
           <div  class="vertical-line"></div>
         </div>
       </div>
@@ -470,14 +604,14 @@
         </div>
       </div>
       <div class="footer-social">
-        <img loading="lazy" src="./assets/images/logo.svg" alt="logo">
+        <img src="./assets/images/logo.svg" alt="logo">
         <div class="d-flex flex-column align-items-end">
           <p>
             Follow us in social media
           </p>
           <div class="social-media mt-2">
-            <img loading="lazy" src="./assets/images/facebook.svg" alt="facebook">
-            <img loading="lazy" class="ms-4" src="./assets/images/instagram.svg" alt="instagram">
+            <img src="./assets/images/facebook.svg" alt="facebook">
+            <img class="ms-4" src="./assets/images/instagram.svg" alt="instagram">
           </div>
         </div>
       </div>
