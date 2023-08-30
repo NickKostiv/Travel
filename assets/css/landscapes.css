@@ -9,6 +9,10 @@
 .about-us.about-us-destination{
   padding-bottom: 200px;
 }
+.destination{
+  height: 100%;
+  min-height: 300px;
+}
 
 
 .main-landing {
@@ -245,7 +249,7 @@
 /* ===================== Daily Start =========================== */
 
 .daily {
-  padding-top: 140px;
+  padding-top: 40px;
   padding-bottom: 290px;
 }
 
@@ -330,8 +334,6 @@
   align-items: center;
   gap: 50px;
   padding-inline: 5%;
-  padding-top: 100px;
-  margin-bottom: -50px;
 }
 .map-section.map-destination{
   margin-top: 150px;
@@ -774,7 +776,7 @@ color: #242424;
 
 
 .testimonials {
-  padding-top: 100px
+  padding-top: 30px
 }
 
 .testimonials h2 {
@@ -1432,7 +1434,7 @@ left: 30px;
   }
 
   .daily {
-    padding-bottom: 230px;
+    padding-bottom: 70px;
   }
   .experience-title {
     margin-bottom: -40px;

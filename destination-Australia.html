@@ -68,7 +68,27 @@
             <h1 class="home-title">
               A Land of <br> Exotic Wildlife  <br>    <span> Australia </span>
             </h1>
-
+            <div class="help-center-form">
+              <button id="help-btn" class="help-center">can i <span>help?</span></button>
+              <div id="help-center" class="hidden">
+                <div class="contact-form">
+                  <div class="contact-form-content">
+                    <div class="close" id="close"><svg class="close-form" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 6L18.7279 18.7279" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M6 18.728L18.7279 6.00011" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <h2>travel carefree again </h2>
+                    <p>Book your private, custom tour of a <br> lifetime with 100% confidence</p>
+                  </div>
+                    <input type="text" placeholder="Name" class="form-control" id="name">
+                    <input type="email" placeholder="Email/Whatsapp No:" class="form-control" id="email">
+                    <input type="text" placeholder="Where do you want to go" class="form-control" id="place">
+                    <textarea placeholder="Message" class="form-control" id="message" rows="5"></textarea>
+                  <button class="contact-us-btn" type="submit">Send us</button>
+                </div>
+              </div>
+            </div>
               <div class="first-slider-wrapper">
                 <div class="first-slider">
                   <div class="slider-1-arrows">
@@ -100,9 +120,10 @@
                   </div>
                 </div>
               </div>
-
         </div>
     </section>
+
+
 
        <!------------------- Map Start -------------------------------->
        <div class="about-us about-us-destination">
@@ -255,12 +276,12 @@ The capital city of Canberra is another exciting destination known for its archi
           </div>
       
           
-        </div>
+        
         <!--------------------- Destination End ---------------------------->
 
         <!-------------------------------   Tours     ----------------------------------->
 
-    <section id="style" class="tours pt-5 position-relative tours-wrapp">
+    <section id="style" class="tours  position-relative tours-wrapp">
       <div class="pb-2 position-mobile">
         <!-- <img src="assets/images/04.svg" alt=""> -->
       </div>
@@ -271,9 +292,9 @@ The capital city of Canberra is another exciting destination known for its archi
       </div>
         <div>
             <div class="tours-fs-section">
-                <div class="tours-card tours-card1 long-card">
+                <div class="tours-card tours-card1 australia-long-card">
                     <div class="search-default">
-                        <span class="search-coutry-name">Melbourne</span>
+                        <!-- <span class="search-coutry-name">Melbourne</span> -->
                         <div class="search-content">
                           <div class="d-flex">
                             <span></span>
@@ -283,6 +304,10 @@ The capital city of Canberra is another exciting destination known for its archi
                             <span></span>
                             <p></p>
                           </div>
+                        </div>
+                        <div class="card-description">
+                          <h2 class="tours-title">Melbourne</h2>
+                          <a href="#" class="learn-more">Learn more</a>
                         </div>
                       </div>
                       <div class="hover-search">
@@ -295,22 +320,21 @@ The capital city of Canberra is another exciting destination known for its archi
                           <li>Enjoy a panoramic view of the city from the top of the Eureka Tower</li>
                           <li>Take a trip down the Great Ocean Road</li>
                         </ul></span>
-                        <a href="#">Experience this</a>
+                        
                         <img class="close-button" src="./assets/images/close.svg" alt="">
                       </div>
                 </div>
-                <div class="tours-card tours-card2" >
+                <div class="tours-card australia-tours-card2" >
                     <div class="search-default">
-                        <span class="search-coutry-name">Sydney</span>
                         <div class="search-content">
                           <div class="d-flex">
-                            <span>Activities:</span>
-                            <p>Culture, Heritage, Theme Park, Adventure</p>
                           </div>
                           <div class="d-flex">
-                            <span>Time:</span>
-                            <p>Nov-Dec</p>
                           </div>
+                        </div>
+                        <div class="card-description">
+                          <h2 class="tours-title">Sydney</h2>
+                          <a href="#" class="learn-more">Learn more</a>
                         </div>
                       </div>
                       <div class="hover-search">
@@ -322,22 +346,21 @@ The capital city of Canberra is another exciting destination known for its archi
                           <li>Enjoy a picnic at Hyde Park</li> 
                           <li>Shop at the Queen Victoria Building</li>                    
                         </ul></span>
-                        <a href="#">Experience this</a>
+                        
                         <img class="close-button" src="./assets/images/close.svg" alt="">
                       </div>
                 </div>
-                <div class="tours-card tours-card3" >
+                <div class="tours-card australia-tours-card3" >
                     <div class="search-default">
-                        <span class="search-coutry-name">Adelaide</span>
                         <div class="search-content">
                           <div class="d-flex">
-                            <span>Activities:</span>
-                            <p>Culture, Heritage, Theme Park, Adventure</p>
                           </div>
                           <div class="d-flex">
-                            <span>Time:</span>
-                            <p>Nov-Dec</p>
                           </div>
+                        </div>
+                        <div class="card-description">
+                          <h2 class="tours-title">Adelaide</h2>
+                          <a href="#" class="learn-more">Learn more</a>
                         </div>
                       </div>
                       <div class="hover-search">
@@ -350,89 +373,85 @@ The capital city of Canberra is another exciting destination known for its archi
                           <li>Ride the Wheel of Brisbane</li> 
                           <li>Enjoy tobogganing at the Moreton Island</li>                                           
                         </ul></span>
-                        <a href="#">Experience this</a>
+                        
                         <img class="close-button" src="./assets/images/close.svg" alt="">
                       </div>
                 </div>
 
-                <div class="tours-card tours-card4" >
+                <div class="tours-card australia-tours-card4" >
                     <div class="search-default">
-                        <span class="search-coutry-name">Great Ocean Road, Victoria</span>
                         <div class="search-content">
                           <div class="d-flex">
-                            <span>Activities:</span>
-                            <p>Culture, Heritage, Theme Park, Adventure</p>
                           </div>
                           <div class="d-flex">
-                            <span>Time:</span>
-                            <p>Nov-Dec</p>
                           </div>
+                        </div>
+                        <div class="card-description">
+                          <h2 class="tours-title">Great Ocean Road, Victoria</h2>
+                          <a href="#" class="learn-more">Learn more</a>
                         </div>
                       </div>
                       <div class="hover-search">
                         <span><ul>One of the greatest road-trip destinations of the country, this trip will take you through picturesque coastal towns with stunning natural views. Located just two hours from Melbourne, the Great Ocean Road is well-known for the world-famous Twelve Apostles, magnificent natural rock structures that are more than 20 million years old.                                                       
                         </ul></span>
-                        <a href="#">Experience this</a>
+                        
                         <img class="close-button" src="./assets/images/close.svg" alt="">
                       </div>
                 </div>
-                <div class="tours-card tours-card5" >
+                <div class="tours-card australia-tours-card5" >
                     <div class="search-default">
-                        <span class="search-coutry-name">Kangaroo Island, South Australia</span>
                         <div class="search-content">
                           <div class="d-flex">
-                            <span>Activities:</span>
-                            <p>Culture, Heritage, Theme Park, Adventure</p>
                           </div>
                           <div class="d-flex">
-                            <span>Time:</span>
-                            <p>Nov-Dec</p>
                           </div>
+                        </div>
+                        <div class="card-description">
+                          <h2 class="tours-title">Great Ocean Road, Victoria</h2>
+                          <a href="#" class="learn-more">Learn more</a>
                         </div>
                       </div>
                       <div class="hover-search">
                         <span>Located just 112 km southwest of Adelaide, Kangaroo Island is known for its wildlife and pristine beaches. A must-visit is the Remarkable Rocks which have been sculpted by the wind and wild seas over millions of years. </span>
-                        <a href="#">Experience this</a>
+                        
                         <img class="close-button" src="./assets/images/close.svg" alt="">
                       </div>
                 </div>
-                <div class="tours-card tours-card6" >
+                <div class="tours-card australia-tours-card6" >
                   <div class="search-default">
-                      <span class="search-coutry-name">Uluru, Northern Territory</span>
                       <div class="search-content">
                         <div class="d-flex">
-                          <span>Activities:</span>
-                          <p>Culture, Heritage, Theme Park, Adventure</p>
                         </div>
                         <div class="d-flex">
-                          <span>Time:</span>
-                          <p>Nov-Dec</p>
                         </div>
+                      </div>
+                      <div class="card-description">
+                        <h2 class="tours-title">Uluru, Northern Territory</h2>
+                        <a href="#" class="learn-more">Learn more</a>
                       </div>
                     </div>
                     <div class="hover-search">
                       <span>One of Australia's most iconic symbols is the World Heritage sight of Uluru. Watch the sun rise across this magnificent view amidst the desert and be enthralled by the serenity and beauty of the place!</span>
-                      <a href="#">Experience this</a>
+                      
                       <img class="close-button" src="./assets/images/close.svg" alt="">
                     </div>
               </div>
-              <div class="tours-card tours-card7" >
+              <div class="tours-card australia-tours-card7" >
                 <div class="search-default">
-                    <span class="search-coutry-name">Gold Coast</span>
                     <div class="search-content">
                       <div class="d-flex">
-                        <span>Activities:</span>
-                        <p>Culture, Heritage, Theme Park, Adventure</p>
                       </div>
                       <div class="d-flex">
-                        <span>Time:</span>
-                        <p>Nov-Dec</p>
                       </div>
+                    </div>
+                    <div class="card-description">
+                      <h2 class="tours-title">Gold Coast</h2>
+                      <a href="#" class="learn-more">Learn more</a>
                     </div>
                   </div>
                   <div class="hover-search">
                     <span>The Gold Coast, located in Queensland, Australia, is known for its beautiful beaches, vibrant nightlife, and numerous attractions like Surfers Paradise Beach where you can swimming, sunbathing, and surfing, Theme Parks and SkyPoint Observation Deck</span>
-                    <a href="#">Experience this</a>
+                    
                     <img class="close-button" src="./assets/images/close.svg" alt="">
                   </div>
             </div>
@@ -442,6 +461,7 @@ The capital city of Canberra is another exciting destination known for its archi
             </div>
         </div>
     </section>
+  </div>
 <!--------------------- Tours End ---------------------------->
 
         <!--------------------- Testimonials Start ---------------------------->
@@ -459,7 +479,7 @@ The capital city of Canberra is another exciting destination known for its archi
               <!-- swiper slides -->
               <div class="swiper-wrapper">
                 <div class="swiper-slide ts-slide">
-                  <img src="./assets/images/testimonials-slider-1.png" alt="testimonials-slider-1">
+                  <img class="slider__4-img" src="./assets/images/testimonials-slider-1.png" alt="testimonials-slider-1">
                   <p>
                     "Had great experinces with Desire Trip for our Australia Trip. The planning, the execution and the final product was excellent. I m a maticulous planner with n number of questions but the entire team was so patient in the entire process and ready to do their best to anything till you are satisfied.</p>
                 </div>
@@ -553,8 +573,9 @@ The capital city of Canberra is another exciting destination known for its archi
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
     <script src="assets/js/destination.js"></script>
+    <!-- <script src="assets/js/homepage.js"></script> -->
 
 </body>
 

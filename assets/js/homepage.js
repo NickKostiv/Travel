@@ -32,7 +32,7 @@ let swiper = new Swiper(".slider-1", {
 /*==================== Second Slider Start  ====================*/
 
 let scSwiper = new Swiper(".slider-2", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   loop: true,
   spaceBetween: 30,
   grabCursor: true,
@@ -73,13 +73,13 @@ let thSwiper = new Swiper(".slider-3", {
   navigation: {
     nextEl: ".mb-next",
     prevEl: ".mb-prev",
-  }
+  },
 });
 
 /*==================== Fourth Slider End  ====================*/
 
 let frSwiper = new Swiper(".slider-4", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   loop: true,
   spaceBetween: 20,
   grabCursor: true,
@@ -87,44 +87,24 @@ let frSwiper = new Swiper(".slider-4", {
     nextEl: ".button-next",
     prevEl: ".button-prev",
   },
-  breakpoints: {
-    300: {
-      slidesPerView: 1.3,
-      spaceBetween: 10,
-    },
-    400: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1400: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1500: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-  },
 });
 
 /*==================== Fourth Slider End  ====================*/
 
-// ====================== Help Center Start =======================
-
 let helpBtn = document.getElementById("help-btn");
 let helpCenter = document.getElementById("help-center");
 let helpCenterForm = document.querySelector(".help-center-form");
+let closeFormSvg = document.querySelector(".close-form");
+
+closeFormSvg.addEventListener("click", function () {
+  helpCenter.classList.remove("show");
+  helpCenterForm.classList.remove("show-top");
+});
 
 helpBtn.addEventListener("click", function () {
   helpCenter.classList.toggle("show");
   helpCenterForm.classList.toggle("show-top");
 });
-
-// ====================== Help Center End =======================
 
 /*==================== Scroll Reveal Animation Start ====================*/
 const sr = ScrollReveal({
@@ -162,28 +142,24 @@ sr.reveal(
 
 window.onload = function () {
   setTimeout(() => {
-    var video = document.querySelector('.active-video');
-   if(video.played) {
-    function playVideo(videoSource, type) {
-      var videoElm = document.querySelector('.active-video');
-      var videoSourceElm = document.getElementById('video-sr'); 
-       if (videoElm.paused) {
-            videoElm.pause();
-         } else {
-          videoSourceElm.src = './assets/videos/desire_trip_video_2.mp4';
-       videoSourceElm.type = 'video/mp4';
-      
-       
+    var video = document.querySelector(".active-video");
+    if (video.played) {
+      function playVideo(videoSource, type) {
+        var videoElm = document.querySelector(".active-video");
+        var videoSourceElm = document.getElementById("video-sr");
+        if (videoElm.paused) {
+          videoElm.pause();
+        } else {
+          videoSourceElm.src = "./assets/videos/desire_trip_video_2.mp4";
+          videoSourceElm.type = "video/mp4";
+
           videoElm.load();
-        videoElm.play();
-         }
-        
-       
+          videoElm.play();
+        }
       }
 
-      playVideo()
-   }
-
+      playVideo();
+    }
   }, 7000);
 };
 
@@ -192,62 +168,68 @@ window.onload = function () {
 /* ======================= Video Play Start =========================== */
 //./assets/videos/desire_trip_video_2.mp4
 
-
-
-
 var el = document.querySelector(".active-video");
 var ppbutton = document.getElementById("play-btn");
 var muted = document.getElementById("muted");
 ppbutton.addEventListener("click", function () {
   if (el.paused) {
     el.play();
-    ppbutton.src = './assets/images/pause-btn.svg'
+    ppbutton.src = "./assets/images/pause-btn.svg";
   } else {
     el.pause();
-    ppbutton.src = './assets/images/play.svg'
+    ppbutton.src = "./assets/images/play.svg";
   }
 });
-
-
 
 muted.addEventListener("click", function () {
   if (el.muted === true) {
     el.muted = false;
-    muted.src = './assets/images/unmute.svg'
+    muted.src = "./assets/images/unmute.svg";
   } else {
     el.muted = true;
-    muted.src = './assets/images/muted.svg'
+    muted.src = "./assets/images/muted.svg";
   }
 });
 
-
-
-
-
-
-
 fraction = 0.99;
 function checkScroll() {
+  var video = el;
+  var x = video.offsetLeft,
+    y = video.offsetTop,
+    w = video.offsetWidth,
+    h = video.offsetHeight,
+    r = x + w, //right
+    b = y + h, //bottom
+    visibleX,
+    visibleY,
+    visible;
 
-    
-        var video = el;
-        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
-            b = y + h, //bottom
-            visibleX, visibleY, visible;
+  visibleX = Math.max(
+    0,
+    Math.min(
+      w,
+      window.pageXOffset + window.innerWidth - x,
+      r - window.pageXOffset
+    )
+  );
+  visibleY = Math.max(
+    0,
+    Math.min(
+      h,
+      window.pageYOffset + window.innerHeight - y,
+      b - window.pageYOffset
+    )
+  );
 
-            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+  visible = (visibleX * visibleY) / (w * h);
 
-            visible = visibleX * visibleY / (w * h);
-
-            if (visible > fraction) {
-                ppbutton.src = './assets/images/play.svg'
-                video.pause()
-            } 
-
+  if (visible > fraction) {
+    ppbutton.src = "./assets/images/play.svg";
+    video.pause();
+  }
 }
 
-window.addEventListener('scroll', checkScroll, false);
-window.addEventListener('resize', checkScroll, false);
+window.addEventListener("scroll", checkScroll, false);
+window.addEventListener("resize", checkScroll, false);
 
 /* ======================= Video Play End  =========================== */

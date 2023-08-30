@@ -18,3 +18,21 @@ navbarImg.addEventListener("click", function () {
 });
 
 //===================== Navbar Close End ==========================
+
+// ====================== Help Center Start =======================
+
+let helpBtn = document.getElementById("help-btn");
+let helpCenter = document.getElementById("help-center");
+let helpCenterForm = document.querySelector(".help-center-form");
+let closeFormSvg = document.querySelector(".close-form");
+
+closeFormSvg.addEventListener("click", function () {
+  helpCenter.classList.remove("show");
+  helpCenterForm.classList.remove("show-top");
+});
+
+helpBtn.addEventListener("click", function () {
+  helpCenter.classList.toggle("show");
+  helpCenterForm.classList.toggle("show-top");
+});
+// ====================== Help Center End =======================
