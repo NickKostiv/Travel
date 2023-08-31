@@ -110,10 +110,14 @@
     margin-right: 0px;
     position: fixed;
     bottom: 0;
-    left: 27%;
+    left: 0;
+    width: 100%;
   }
   .help-center-form{
     right: 35px;
+  }
+  .contact-form{
+    width: 100%;
   }
 }
 

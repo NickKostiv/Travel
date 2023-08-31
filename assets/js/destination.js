@@ -111,24 +111,6 @@ let secondSwiper = new Swiper(".slider-2", {
 
 /* ======================  Get Inspired =============== */
 
-let thirdSwiper = new Swiper(".slider-3", {
-  slidesPerView: 2,
-  draggable: true,
-  spaceBetween: 50,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    draggable: true,
-  },
-  breakpoints: {
-    500: {
-      slidesPerView: 2,
-    },
-    300: {
-      slidesPerView: 1.2,
-    },
-  },
-});
-
 /*==================== DestinationSlider Start  ====================*/
 
 let thSwiper = new Swiper(".slider-3", {
