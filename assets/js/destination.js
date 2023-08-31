@@ -8,12 +8,15 @@ let closeFormSvg = document.querySelector(".close-form");
 closeFormSvg.addEventListener("click", function () {
   helpCenter.classList.remove("show");
   helpCenterForm.classList.remove("show-top");
+  helpBtn.style.display = "block"; // Показати кнопку
 });
 
 helpBtn.addEventListener("click", function () {
   helpCenter.classList.toggle("show");
   helpCenterForm.classList.toggle("show-top");
+  helpBtn.style.display = "none"; // Приховати кнопку
 });
+
 // ====================== Help Center End =======================
 /*==================== First Slider Start  ====================*/
 
