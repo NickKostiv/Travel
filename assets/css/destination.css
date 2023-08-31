@@ -972,7 +972,13 @@ color: #000000;
   gap: 35px;
   grid-template-columns: 2fr 1fr 1fr;
 }
-
+@media (max-width: 992px) {
+  .tours-fs-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .tours-big {
   width: 100% !important;
 }
@@ -1674,10 +1680,6 @@ font-size: 40px;
     width: 150px;
     height: 221px;
   }
-  .slider__4-img{
-    width: 100%;
-    max-width: 450px;
-  }
 
   .tours-info {
     text-align: center;
@@ -1847,7 +1849,6 @@ font-size: 40px;
   }
 
   .search-default {
-    height: auto;
     opacity: 1 !important;
   }
 

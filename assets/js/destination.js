@@ -152,14 +152,19 @@ let thSwiper = new Swiper(".slider-3", {
 
 /*==================== Testimonials End  ====================*/
 
-let frSwiper = new Swiper(".slider-4", {
-  slidesPerView: 2,
+const frSwiper = new Swiper(".slider-4", {
+  slidesPerView: 1,
   loop: true,
   spaceBetween: 20,
   grabCursor: true,
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2, // Змінити на 1 слайд
+    },
   },
 });
 
