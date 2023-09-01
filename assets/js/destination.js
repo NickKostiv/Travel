@@ -163,26 +163,30 @@ const handleCardsHover = () => {
     const hoverEl = card.querySelector(".hover-search");
     const defaultEl = card.querySelector(".search-default");
     const closeBtn = card.querySelector(".close-button");
+    const cardDescription = card.querySelector(".card-description");
 
     card.addEventListener("mouseenter", () => {
       defaultEl.style.opacity = 0;
       defaultEl.style.zIndex = 0;
       hoverEl.style.opacity = 1;
       hoverEl.style.zIndex = 10;
+      cardDescription.style.display = "none";
     });
 
     card.addEventListener("mouseleave", () => {
       defaultEl.style.opacity = 1;
-      defaultEl.style.zIndex = 10;
+      defaultEl.style.zIndex = 30;
       hoverEl.style.opacity = 0;
       hoverEl.style.zIndex = 0;
+      cardDescription.style.display = "block";
     });
 
     closeBtn.addEventListener("click", () => {
       defaultEl.style.opacity = 1;
-      defaultEl.style.zIndex = 10;
+      defaultEl.style.zIndex = 30;
       hoverEl.style.opacity = 0;
       hoverEl.style.zIndex = 0;
+      cardDescription.style.display = "block";
     });
   });
 };
