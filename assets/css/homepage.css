@@ -726,7 +726,7 @@
 
   .journey-arrow-right,
   .journey-arrow-left {
-    display: none;
+    /* display: none; */
   }
 
 

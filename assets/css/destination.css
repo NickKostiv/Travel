@@ -352,14 +352,24 @@ a {
 }
 .journey-arrow-left {
   position: absolute;
-  top: 38%;
+  /* top: 38%; */
+  bottom: 100px;
   left: 7%;
 }
 
 .journey-arrow-right {
   position: absolute;
-  top: 38%;
+  /* top: 38%; */
+  bottom: 100px;
   right: 7%;
+}
+@media (max-width: 768px) {
+  .journey-arrow-right{
+    right: 35%;
+  }
+  .journey-arrow-left{
+    left: 35px;
+  }
 }
 
 
@@ -1747,7 +1757,7 @@ font-size: 40px;
 
   .button-prev,
   .button-next {
-    display: none;
+    /* display: none; */
   }
 
   .sw-mn-pagination {

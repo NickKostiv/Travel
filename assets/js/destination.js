@@ -296,47 +296,5 @@ ScrollReveal().reveal(".experience-slider", {
   duration: 1000,
 });
 // ScrollReveal().reveal('.ds-carousel', { delay: 500, distance: '50px', origin: 'left', duration: 1000 });
-ScrollReveal().reveal(".tours-card1", {
-  delay: 700,
-  distance: "50px",
-  origin: "top",
-  duration: 1000,
-});
-ScrollReveal().reveal(".tours-card2", {
-  delay: 900,
-  distance: "50px",
-  origin: "top",
-  duration: 1000,
-});
-ScrollReveal().reveal(".tours-card3", {
-  delay: 1100,
-  distance: "50px",
-  origin: "top",
-  duration: 1000,
-});
-ScrollReveal().reveal(".tours-card4", {
-  delay: 1200,
-  distance: "50px",
-  origin: "top",
-  duration: 1000,
-});
-ScrollReveal().reveal(".tours-card5", {
-  delay: 1300,
-  distance: "50px",
-  origin: "top",
-  duration: 1000,
-});
-ScrollReveal().reveal(".tours-card6", {
-  delay: 1400,
-  distance: "50px",
-  origin: "top",
-  duration: 1000,
-});
-ScrollReveal().reveal(".tours-card7", {
-  delay: 1500,
-  distance: "50px",
-  origin: "top",
-  duration: 1000,
-});
 
 // Інші налаштування ScrollReveal можна додати тут

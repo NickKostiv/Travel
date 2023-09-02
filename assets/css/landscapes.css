@@ -1002,10 +1002,6 @@ left: 30px;
     padding-inline: 5%;
   }
 
-  
-
-
- 
  
   .footer {
     padding-inline: 4%;
@@ -1057,7 +1053,7 @@ left: 30px;
 
   .journey-arrow-right,
   .journey-arrow-left {
-    display: none;
+    /* display: none; */
   }
 
 
