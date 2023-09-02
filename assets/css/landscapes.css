@@ -6,13 +6,6 @@
   background-size: cover;
   background-position-y: bottom;
 }
-.about-us.about-us-destination{
-  padding-bottom: 200px;
-}
-.destination{
-  height: 100%;
-  min-height: 300px;
-}
 
 
 .main-landing {
@@ -959,7 +952,7 @@ left: 30px;
   .arrows-group {
     position: absolute;
     bottom: 0;
-    left: 7%;
+    left: 45%;
     z-index: 999;
   }
 
@@ -980,7 +973,7 @@ left: 30px;
     padding-top: 0;
   }
   .map-section.destination-map{
-    padding-top: 200px;
+    /* padding-top: 200px; */
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -1001,7 +994,7 @@ left: 30px;
   }
  
   .map-items-wrapp {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
 
@@ -1580,8 +1573,8 @@ left: 30px;
 @media screen and (max-width: 716px) {
   .map-items-wrapp{
     display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
   .map-item{
     grid-column: span 1;

@@ -343,6 +343,13 @@ a {
 }
 
 /* Destination slider start  */
+.about-us.about-us-destination{
+  padding-bottom: 200px;
+}
+.destination{
+  height: 100%;
+  min-height: 300px;
+}
 .journey-arrow-left {
   position: absolute;
   top: 38%;
@@ -1266,7 +1273,7 @@ font-size: 40px;
   }
 
   .tours-fs-section {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .footer {
@@ -1372,7 +1379,7 @@ font-size: 40px;
   }
 
   .tours-fs-section {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
 

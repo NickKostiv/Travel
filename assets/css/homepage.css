@@ -205,7 +205,7 @@
 .slider-1-arrows {
   z-index: 999;
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   left: 45%;
 }
 
@@ -235,6 +235,12 @@
   align-items: flex-start;
   gap: 200px;
   color: #fff;
+}
+@media (min-width: 1200px) {
+  .about-us {
+
+    /* padding-block: 50px;  */
+  }
 }
 .about-text{
   font-family: 'Montserrat', sans-serif;
@@ -647,12 +653,7 @@
     position: initial !important;
   }
 
-  .arrows-group {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-  }
+
 
   .button-prev {
     margin-right: auto;
